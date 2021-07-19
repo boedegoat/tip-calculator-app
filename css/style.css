@@ -4,6 +4,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Space Mono', monospace;
+  list-style: none;
 }
 
 :root {
@@ -14,5 +15,28 @@
   --gray-cyan-2: hsl(185, 41%, 84%);
   --gray-cyan-1: hsl(189, 41%, 97%);
   --white: hsl(0, 0%, 100%);
+  --container-radius: 24px;
+}
+
+body {
+  background: var(--gray-cyan-2);
+  min-height: 100vh;
+}
+
+.top-header {
+  letter-spacing: 5px;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.top-header h1 {
+  font-size: 24px;
+}
+
+.container {
+  background: var(--white);
+  border-top-left-radius: var(--container-radius);
+  border-top-right-radius: var(--container-radius);
+  padding: 32px;
 }
 /*# sourceMappingURL=style.css.map */
