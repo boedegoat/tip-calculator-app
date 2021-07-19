@@ -44,6 +44,7 @@ body {
 
   .header {
     color: var(--dark-cyan);
+    margin-bottom: 8px;
   }
 
   .input {
@@ -54,7 +55,6 @@ body {
     background: var(--gray-cyan-1);
     padding: 10px 15px;
     border-radius: 5px;
-    margin-top: 5px;
     font-weight: 700;
     color: var(--dark-cyan);
     font-size: 24px;
@@ -62,6 +62,35 @@ body {
 
     &::-webkit-inner-spin-button {
       appearance: none;
+    }
+  }
+}
+
+.select-tip {
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    .item {
+      flex: 1 1 40%;
+      text-align: center;
+      background: var(--dark-cyan);
+      color: var(--white);
+      padding: 0.5rem;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 5px;
+
+      &.custom {
+        background: var(--gray-cyan-2);
+        color: var(--dark-cyan);
+      }
+
+      &:hover {
+        background: var(--primary-cyan);
+        color: var(--dark-cyan);
+      }
     }
   }
 }

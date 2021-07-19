@@ -46,6 +46,7 @@ body {
 
 .section .header {
   color: var(--dark-cyan);
+  margin-bottom: 8px;
 }
 
 .section .input {
@@ -56,7 +57,6 @@ body {
   background: var(--gray-cyan-1);
   padding: 10px 15px;
   border-radius: 5px;
-  margin-top: 5px;
   font-weight: 700;
   color: var(--dark-cyan);
   font-size: 24px;
@@ -66,5 +66,37 @@ body {
 .section .input::-webkit-inner-spin-button {
   -webkit-appearance: none;
           appearance: none;
+}
+
+.select-tip .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 12px;
+}
+
+.select-tip .list .item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+  text-align: center;
+  background: var(--dark-cyan);
+  color: var(--white);
+  padding: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.select-tip .list .item.custom {
+  background: var(--gray-cyan-2);
+  color: var(--dark-cyan);
+}
+
+.select-tip .list .item:hover {
+  background: var(--primary-cyan);
+  color: var(--dark-cyan);
 }
 /*# sourceMappingURL=style.css.map */
