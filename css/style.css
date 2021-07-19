@@ -39,4 +39,32 @@ body {
   border-top-right-radius: var(--container-radius);
   padding: 32px;
 }
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section .header {
+  color: var(--dark-cyan);
+}
+
+.section .input {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: var(--gray-cyan-1);
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-weight: 700;
+  color: var(--dark-cyan);
+  font-size: 24px;
+  text-align: right;
+}
+
+.section .input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+}
 /*# sourceMappingURL=style.css.map */
