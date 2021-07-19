@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="top-header">
+      <h1>SPLI</h1>
+      <h1>TTER</h1>
+    </header>
+
+    <div class="container">
+      <div class="bill">
+        <h3 class="header">Bill</h3>
+        <input type="number" class="input" />
+      </div>
+      <div class="select-tip">
+        <h3 class="header">Select Tip %</h3>
+        <ul class="list">
+          <li class="item">5%</li>
+          <li class="item">10%</li>
+          <li class="item">15%</li>
+          <li class="item">25%</li>
+          <li class="item">50%</li>
+          <li class="item">Custom</li>
+        </ul>
+      </div>
+      <div class="number-of-people">
+        <h3 class="header">Number of People</h3>
+        <input type="number" class="input" />
+      </div>
+      <div class="result">
+        <div class="item">
+          <div class="label">
+            <h3 class="main">Tip Amount</h3>
+            <p class="description">/ person</p>
+          </div>
+          <h1 class="amount">$<span id="tip-amount-display">0.00</span></h1>
+        </div>
+        <div class="item">
+          <div class="label">
+            <h3 class="main">Total</h3>
+            <p class="description">/ person</p>
+          </div>
+          <h1 class="amount">$<span id="total-display">0.00</span></h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+</html>
