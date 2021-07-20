@@ -18,6 +18,10 @@
   --container-radius: 24px;
 }
 
+input {
+  caret-color: var(--primary-cyan);
+}
+
 input[type='number']::-webkit-inner-spin-button {
   -webkit-appearance: none;
           appearance: none;
