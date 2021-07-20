@@ -95,14 +95,61 @@ body {
       border-radius: 5px;
 
       &.custom {
-        background: var(--gray-cyan-2);
+        background: var(--gray-cyan-1);
         color: var(--dark-cyan);
       }
 
       &:hover {
-        background: var(--primary-cyan);
+        background: var(--gray-cyan-2);
         color: var(--dark-cyan);
       }
+    }
+  }
+}
+
+.result {
+  background: var(--dark-cyan);
+  padding: 25px;
+  border-radius: 15px;
+
+  .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+
+    .label {
+      .main {
+        color: var(--white);
+        font-size: 16px;
+      }
+
+      .description {
+        color: var(--gray-cyan-3);
+        font-weight: bold;
+      }
+    }
+
+    .amount {
+      margin-left: auto;
+      color: var(--primary-cyan);
+    }
+  }
+
+  .btn-reset {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: var(--primary-cyan);
+    color: var(--dark-cyan);
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 8px;
+
+    &:hover {
+      background: var(--gray-cyan-2);
     }
   }
 }

@@ -104,12 +104,61 @@ body {
 }
 
 .select-tip .list .item.custom {
-  background: var(--gray-cyan-2);
+  background: var(--gray-cyan-1);
   color: var(--dark-cyan);
 }
 
 .select-tip .list .item:hover {
+  background: var(--gray-cyan-2);
+  color: var(--dark-cyan);
+}
+
+.result {
+  background: var(--dark-cyan);
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.result .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+.result .item .label .main {
+  color: var(--white);
+  font-size: 16px;
+}
+
+.result .item .label .description {
+  color: var(--gray-cyan-3);
+  font-weight: bold;
+}
+
+.result .item .amount {
+  margin-left: auto;
+  color: var(--primary-cyan);
+}
+
+.result .btn-reset {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
   background: var(--primary-cyan);
   color: var(--dark-cyan);
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.result .btn-reset:hover {
+  background: var(--gray-cyan-2);
 }
 /*# sourceMappingURL=style.css.map */
