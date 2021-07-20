@@ -42,6 +42,7 @@ body {
 
 .section {
   margin-bottom: 20px;
+  position: relative;
 }
 
 .section .header {
@@ -49,7 +50,11 @@ body {
   margin-bottom: 8px;
 }
 
-.section .input {
+.section .input-group {
+  position: relative;
+}
+
+.section .input-group .input {
   display: block;
   width: 100%;
   border: none;
@@ -63,9 +68,17 @@ body {
   text-align: right;
 }
 
-.section .input::-webkit-inner-spin-button {
+.section .input-group .input::-webkit-inner-spin-button {
   -webkit-appearance: none;
           appearance: none;
+}
+
+.section .input-group .logo {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .select-tip .list {

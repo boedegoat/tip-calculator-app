@@ -41,27 +41,39 @@ body {
 
 .section {
   margin-bottom: 20px;
+  position: relative;
 
   .header {
     color: var(--dark-cyan);
     margin-bottom: 8px;
   }
 
-  .input {
-    display: block;
-    width: 100%;
-    border: none;
-    outline: none;
-    background: var(--gray-cyan-1);
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-weight: 700;
-    color: var(--dark-cyan);
-    font-size: 24px;
-    text-align: right;
+  .input-group {
+    position: relative;
 
-    &::-webkit-inner-spin-button {
-      appearance: none;
+    .input {
+      display: block;
+      width: 100%;
+      border: none;
+      outline: none;
+      background: var(--gray-cyan-1);
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-weight: 700;
+      color: var(--dark-cyan);
+      font-size: 24px;
+      text-align: right;
+
+      &::-webkit-inner-spin-button {
+        appearance: none;
+      }
+    }
+
+    .logo {
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      transform: translateY(-50%);
     }
   }
 }
