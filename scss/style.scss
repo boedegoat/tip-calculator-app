@@ -49,6 +49,7 @@ body {
 
   h1 {
     font-size: 24px;
+    color: var(--gray-cyan-4);
   }
 }
 
@@ -75,6 +76,10 @@ body {
 .section {
   margin-bottom: 20px;
   position: relative;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 40px;
+  }
 
   .header {
     color: var(--dark-cyan);
