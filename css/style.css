@@ -30,6 +30,19 @@ input[type='number']::-webkit-inner-spin-button {
 body {
   background: var(--gray-cyan-2);
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .top-header {
@@ -47,6 +60,25 @@ body {
   border-top-left-radius: var(--container-radius);
   border-top-right-radius: var(--container-radius);
   padding: 24px;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 50px;
+    border-radius: var(--container-radius);
+    max-width: 920px;
+    height: 480px;
+  }
+}
+
+.sections,
+.result {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
 }
 
 .section {
@@ -185,6 +217,19 @@ body {
   background: var(--dark-cyan);
   padding: 24px;
   border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .result {
+    padding: 40px;
+  }
 }
 
 .result .item {
@@ -202,16 +247,34 @@ body {
   font-size: 16px;
 }
 
+@media (min-width: 1024px) {
+  .result .item .label .main {
+    font-size: 20px;
+  }
+}
+
 .result .item .label .description {
   color: var(--gray-cyan-3);
   font-weight: bold;
   font-size: 12px;
 }
 
+@media (min-width: 1024px) {
+  .result .item .label .description {
+    font-size: 15px;
+  }
+}
+
 .result .item .amount {
   margin-left: auto;
   color: var(--primary-cyan);
   font-size: 32px;
+}
+
+@media (min-width: 1024px) {
+  .result .item .amount {
+    font-size: 50px;
+  }
 }
 
 .result .btn-reset {
@@ -226,6 +289,7 @@ body {
   cursor: pointer;
   border-radius: 5px;
   padding: 8px;
+  margin-top: auto;
 }
 
 .result .btn-reset:hover {
