@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/saas-javascript-BcR7Nrdm4)
 - [Live Site URL](https://tip-calculator-app-boedegoat.vercel.app/)
 
 ## My process
