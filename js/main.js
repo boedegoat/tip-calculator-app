@@ -14,6 +14,10 @@ const appObject = {
 inputs.forEach((input) => {
   input.addEventListener('input', (e) => {
     appObject[e.target.name] = +e.target.value
+    if (e.target.value === '0') {
+      return e.target.parentNode.classList.add('error')
+    }
+    e.target.parentNode.classList.remove('error')
     if (e.target.name === 'tip') {
       resetSelectedTip()
     }
@@ -25,6 +29,7 @@ btnReset.addEventListener('click', () => {
   resetAppObject()
   resetDisplay()
   resetSelectedTip()
+  resetInputsClass()
   inputs.forEach((input) => {
     input.value = ''
   })
@@ -39,6 +44,10 @@ selectTipItems.forEach((item) => {
     displayResult()
   })
 })
+
+function resetInputsClass() {
+  inputs.forEach((input) => input.parentNode.classList.remove('error'))
+}
 
 function displayResult() {
   if (!appObjectIsFilled()) {

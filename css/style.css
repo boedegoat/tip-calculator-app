@@ -95,6 +95,39 @@ body {
   position: relative;
 }
 
+.section .input-group::before {
+  content: "can't be zero";
+  position: absolute;
+  top: -55%;
+  right: 0;
+  font-weight: bold;
+  color: #c4776c;
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .section .input-group::before {
+    top: 110%;
+  }
+}
+
+.section .input-group.error::before {
+  display: block;
+}
+
+.section .input-group.error .input,
+.section .input-group.error .input:focus {
+  -webkit-box-shadow: 0 0 0 2px #c4776c;
+          box-shadow: 0 0 0 2px #c4776c;
+  caret-color: #c4776c;
+}
+
+@media (max-width: 1024px) {
+  .section .input-group.error {
+    margin-bottom: 50px;
+  }
+}
+
 .section .input-group .input {
   display: block;
   width: 100%;

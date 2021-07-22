@@ -76,6 +76,36 @@ body {
   .input-group {
     position: relative;
 
+    &::before {
+      content: "can't be zero";
+      position: absolute;
+      top: -55%;
+      right: 0;
+      font-weight: bold;
+      color: #c4776c;
+      display: none;
+
+      @media (max-width: 1024px) {
+        top: 110%;
+      }
+    }
+
+    &.error::before {
+      display: block;
+    }
+
+    &.error .input,
+    &.error .input:focus {
+      box-shadow: 0 0 0 2px #c4776c;
+      caret-color: #c4776c;
+    }
+
+    @media (max-width: 1024px) {
+      &.error {
+        margin-bottom: 50px;
+      }
+    }
+
     .input {
       display: block;
       width: 100%;
