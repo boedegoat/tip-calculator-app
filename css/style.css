@@ -176,8 +176,8 @@ body {
 
 .select-tip .list .item {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 40%;
-          flex: 1 1 40%;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
   text-align: center;
   background: var(--dark-cyan);
   color: var(--white);
@@ -186,6 +186,12 @@ body {
   font-weight: bold;
   border-radius: 5px;
   font-size: 16px;
+}
+
+@media (min-width: 1024px) {
+  .select-tip .list .item {
+    font-size: 24px;
+  }
 }
 
 .select-tip .list .item.selected {

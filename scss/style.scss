@@ -148,7 +148,7 @@ body {
     gap: 12px;
 
     .item {
-      flex: 1 1 40%;
+      flex: 1 1 25%;
       text-align: center;
       background: var(--dark-cyan);
       color: var(--white);
@@ -157,6 +157,10 @@ body {
       font-weight: bold;
       border-radius: 5px;
       font-size: 16px;
+
+      @media (min-width: 1024px) {
+        font-size: 24px;
+      }
 
       &.selected {
         background: var(--primary-cyan);
