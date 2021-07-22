@@ -113,6 +113,11 @@ body {
   font-size: 16px;
 }
 
+.select-tip .list .item.selected {
+  background: var(--primary-cyan);
+  color: var(--dark-cyan);
+}
+
 .select-tip .list .item.custom {
   background: var(--gray-cyan-1);
   color: var(--dark-cyan);
@@ -171,7 +176,7 @@ body {
           box-shadow: 0 0 0 2px var(--primary-cyan);
 }
 
-.select-tip .list .item:not(.custom):hover {
+.select-tip .list .item:not(.custom):not(.selected):hover {
   background: var(--gray-cyan-2);
   color: var(--dark-cyan);
 }
