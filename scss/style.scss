@@ -153,7 +153,7 @@ body {
     gap: 12px;
 
     .item {
-      flex: 1 1 25%;
+      flex: 1 1 40%;
       text-align: center;
       background: var(--dark-cyan);
       color: var(--white);
@@ -161,10 +161,10 @@ body {
       cursor: pointer;
       font-weight: bold;
       border-radius: 5px;
-      font-size: 16px;
+      font-size: 24px;
 
       @media (min-width: 1024px) {
-        font-size: 24px;
+        flex: 1 1 25%;
       }
 
       &.selected {
