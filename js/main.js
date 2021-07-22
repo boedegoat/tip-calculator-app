@@ -14,7 +14,7 @@ const appObject = {
 inputs.forEach((input) => {
   input.addEventListener('input', (e) => {
     appObject[e.target.name] = +e.target.value
-    if (e.target.value === '0') {
+    if (e.target.value !== '' && +e.target.value < 1) {
       return e.target.parentNode.classList.add('error')
     }
     e.target.parentNode.classList.remove('error')
